@@ -302,19 +302,6 @@ Token.stringify = function(o, language, parent) {
 
 };
 
-// Get current script and highlight
-var script = document.getElementsByTagName('script');
-
-script = script[script.length - 1];
-
-if (script) {
-  _.filename = script.src;
-
-  if (document.addEventListener && !script.hasAttribute('data-manual')) {
-    document.addEventListener('DOMContentLoaded', _.highlightAll);
-  }
-}
-
 })();
 
 
