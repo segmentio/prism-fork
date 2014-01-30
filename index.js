@@ -4,13 +4,12 @@
  * @author Lea Verou http://lea.verou.me
  */
 
-(function(){
 
 // Private helper vars
 var lang = /\blang(?:uage)?-(?!\*)(\w+)\b/i;
 
-var Prism;
-var _ = Prism = module.exports = {
+var Prism, _;
+_ = Prism = module.exports = {
   util: {
     type: function (o) {
       return Object.prototype.toString.call(o).match(/\[object (\w+)\]/)[1];
@@ -302,7 +301,6 @@ Token.stringify = function(o, language, parent) {
 
 };
 
-})();
 
 
 
