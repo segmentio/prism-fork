@@ -1,0 +1,5 @@
+{
+  "name": "prism",
+  "repo": "segmentio/prism",
+  "scripts": ["index.js"]
+}
